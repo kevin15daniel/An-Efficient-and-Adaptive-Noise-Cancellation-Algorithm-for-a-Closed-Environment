@@ -13,20 +13,14 @@ This project presents an advanced noise cancellation system designed specificall
   - Adaptive Active Noise Cancelling (ANC)
 
 - **Evaluation Results**:
-  - **Kalman Filter**: 
-    - SNR: -30.48 dB
-    - Dynamic Range: 1.11 dB
-    - PSNR: 12.60 dB
-  - **Wiener Filter**: 
-    - SNR: 58.57 dB
-    - Dynamic Range: 117.22 dB
-    - PSNR: 72.32 dB
-  - **Band-Pass Filter**: 
-    - SNR: -30.48 dB
-    - Dynamic Range: 349.10 dB
-    - PSNR: 12.60 dB
-  - **Adaptive ANC**: 
-    - Performance metrics available in the project documentation
+
+| Filter Type          | SNR (dB) | Dynamic Range (dB) | PSNR (dB) | Frequency Response Impact | Headroom Clipping | Weighted Noise Metrics |
+|----------------------|----------|---------------------|-----------|----------------------------|--------------------|------------------------|
+| **Kalman Filter**    | -30.48   | 1.11                | 12.60     | Moderate                  | No                 | N/A                    |
+| **Wiener Filter**    | 58.57    | 117.22              | 72.32     | Strong Reduction          | No                 | N/A                    |
+| **Band-Pass Filter** | -30.48   | 349.10              | 12.60     | Frequency-Selective       | No                 | N/A                    |
+| **Adaptive ANC**     | 15.32    | 120.25              | 25.68     | Wideband Noise Reduction  | No (0.32 dB Headroom) | 0.0023              |
+
 
 ## Intended Use
 
