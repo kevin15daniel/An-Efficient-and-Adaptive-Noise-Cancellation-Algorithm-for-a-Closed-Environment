@@ -14,13 +14,12 @@ This project presents an advanced noise cancellation system designed specificall
 
 - **Evaluation Results**:
 
-| Filter Type          | SNR (dB) | Dynamic Range (dB) | PSNR (dB) | 
-|----------------------|----------|---------------------|-----------|
-| **Kalman Filter**    | -30.48   | 1.11                | 12.60     |
-| **Wiener Filter**    | 58.57    | 117.22              | 72.32     |
-| **Band-Pass Filter** | -30.48   | 349.10              | 12.60     |
-| **Adaptive ANC**     | 15.32    | 120.25              | 25.68     |
-
+| Filter Type          | SNR (dB) | PSNR (dB) | Dynamic Range (dB) |
+|----------------------|----------|-----------|---------------------|
+| **Kalman Filter**    | -30.48   | 12.60     | 1.11                |
+| **Wiener Filter**    | 58.57    | 72.32     | 117.22              |
+| **Band-Pass Filter** | -30.48   | 12.60     | 349.10              |
+| **Adaptive ANC**     | 15.32    | 25.68     | 120.25              |
 
 ## Intended Use
 
@@ -29,14 +28,14 @@ This noise cancellation system is designed for applications requiring high-quali
 - Audio recording studio noise management
 - Hearing aid devices
 - Automotive audio systems
-- Any closed-environment audio processing application where noise reduction is critical
+- Any closed-environment audio processing application where noise reduction is critical.
 
 ## Limitations
 
 - **Environment Specificity**: Optimized for closed environments; performance may vary in open settings
 - **ANC Dependency**: Requires a reference noise signal for optimal performance
 - **Computational Resources**: Real-time processing may require significant computational power
-- **Audio Format**: Primarily tested with common audio formats (MP3, WAV)
+- **Audio Format**: Primarily tested with common audio formats (MP3, WAV).
 
 ## Training Procedure
 
@@ -46,13 +45,13 @@ The algorithms were implemented and tested using the following setup:
 - **Libraries**: NumPy, SciPy, Matplotlib, LibROSA, PyWavelets, PyDub
 - **Sample Rate**: 48000 Hz
 - **Channel Support**: Mono and Stereo
-- **Testing Data**: Sample audio files with varying noise profiles
+- **Testing Data**: Sample audio files with varying noise profiles.
 
 ### Algorithm Performance:
 - **Kalman Filter**: Effective for signals with predictable noise patterns
 - **Wiener Filter**: Superior performance in environments with known noise characteristics
 - **Band-Pass Filter**: Ideal for scenarios requiring specific frequency preservation
-- **Adaptive ANC**: Most effective in real-time noise cancellation applications
+- **Adaptive ANC**: Most effective in real-time noise cancellation applications.
 
 ## Framework and Libraries
 
